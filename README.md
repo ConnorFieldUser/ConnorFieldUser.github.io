@@ -1,11 +1,6 @@
 # My Portfolio (https://connorfielduser.github.io.)
 
 
-
-
-
-Copyright and License
-
 Created by Connor Field
 2016
 

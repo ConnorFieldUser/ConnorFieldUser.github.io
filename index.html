@@ -59,11 +59,12 @@
                         <a class="page-scroll" href="#download">Portfolio</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                    <li>
                       <a class="page-scroll" href="#skills">Skills</a>
                     </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+
                     <li>
                       <a  class="page-scroll" href="docs/latestresume.pdf" target="_blank">Resume</a>
                     </li>
@@ -112,19 +113,143 @@
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Portfolio</h2>
+
+
+<span style="color:black">
+<!-- TESTING MODAL START -->
+<!-- Modal -->
+<div id="storeModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 style="color: #366CAB"class="modal-title">Store to Door</h4>
+      </div>
+      <div class="modal-body">
+        <!-- <p>Some store in the modal.</p> -->
+        <a href="https://store-to-door.herokuapp.com/" class="thumbnail" target="_blank">
+          <img src="img/storetodoor.png" alt="Store To Door">
+        </a>
+        <a style="background-color:#366CAB; border-color:#366CAB" href="https://store-to-door.herokuapp.com/" class="btn btn-info" role="button" target="_blank">Live Example</a>
+        <a style="background-color:#366CAB; border-color:#366CAB" href="https://github.com/ConnorFieldUser/Final_Project" class="btn btn-info" role="button" target="_blank">Code</a>
+
+
+<p>Store to Door is an example of an ordering and delivery platform and was my final project at The Iron Yard.</p>
+
+<p>Customer users can add contact information, browse grocery items, look for nearby stores, add items to a cart, send the list up to the driver users. Search items are pulled through the Supermarket API. Driver users can mark lists as complete or in progress. The original concept was to assist the elderly, so we took care to make it clear and simple to use.</p>
+
+<p>I was the backend engineer, and I was in charge of database management, API endpoints, driver side auth through django, email config, DRF token auth, and Heroku deployment.</p>
+
+<p>To get the app running locally, install the requirements.txt file, set up a Python 3 virtual enviroment, set a Django secret key in settings, and get an API key for the Supermarket API.</p>
+
+<ul>
+<p>
+Uses:</p>
+<h3>
+<li>Python</li>
+
+<li>Bootstrap</li>
+
+<li>Django</li>
+
+<li>Django REST Framework</li>
+
+<li>Gunicorn wsgi server</li>
+
+<li>Psycopg2</li>
+
+<li>dj-database-url</li>
+
+<li>WhiteNoise</li>
+
+<li>Python requests library</li>
+
+<li>XMLJSON library</li>
+
+<li>JavaScript</li>
+
+<li>HTML/CSS/SCSS</li>
+
+<li>jQuery</li>
+
+<li>Backbone</li>
+
+<li>React</li>
+</ul>
+</h3>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- TESTING MODAL END -->
+<!-- MODAL 2 -->
+
+<div id="imagesModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Images Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some images in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- MODAL 2 END -->
+<!-- MODAL 3 -->
+<div id="restModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">REST API</h4>
+      </div>
+      <div class="modal-body">
+        <p>REST API uses Django REST Framework to provede JSON data to users.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- MODAL 3 END -->
+</span>
                     <br><hr>
+
  <div class="row">
    <div class="col-xs-6 col-md-3">
-     <a href="https://github.com/ConnorFieldUser/Hangman_repo" class="thumbnail" target="_blank">
-       <img src="img/hangman.png" alt="Hangman terminal game">
-       Hangman Terminal Game
-     </a>
+       <button style="background-color:#366CAB; border-color:#366CAB" type="button" class="btn btn-info" data-toggle="modal" data-target="#storeModal">Store to Door</button>
+   </li>
    </div>
-
+   <div class="col-xs-6 col-md-3">
+       <button style="background-color:#366CAB; border-color:#366CAB" type="button" class="btn btn-info" data-toggle="modal" data-target="#imagesModal">Image Gathering Site</button>
+   </div>
+   <div class="col-xs-6 col-md-3">
+       <button style="background-color:#366CAB; border-color:#366CAB" type="button" class="btn btn-info" data-toggle="modal" data-target="#restModal">REST API</button>
+   </div>
   <div class="col-xs-6 col-md-3">
     <a href="https://github.com/ConnorFieldUser/Baseball-api" class="thumbnail" target="_blank">
       <img src="img/baseballAPI.png" alt="Baseball stats RESTful API">
-      Baseball RESTful API
+      <button style="background-color:#366CAB; border-color:#366CAB" type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Hangman Terminal Game</button>
     </a>
   </div>
 

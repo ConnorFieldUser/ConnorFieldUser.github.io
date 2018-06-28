@@ -1,6 +1,3 @@
-# My Portfolio (https://connorfielduser.github.io.)
-
-
 Created by Connor Field
 2016
 
